@@ -15,8 +15,8 @@
         <!-- Menu -->
         <nav>
             <ul>
-                <li><a href="#sobremim">Sobre mim</a></li>
-                <li><a href="#ultimostrabalhos">Trabalhos recentes</a></li>
+                <li><a href="#titulo-sobremim">Sobre mim</a></li>
+                <li><a href="#titulo-trabalhos-recentes">Trabalhos recentes</a></li>
                 <li><a href="#menuproducoes">Produções</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -30,18 +30,18 @@
 
     </header>
 
-    <!-- Conteúdo -->
+    <!-- Conteúdo da página -->
     <article>
+        <h2 id="titulo-sobremim">Sobre mim</h2>
         <div id="sobremim">
-            <h2>Sobre mim</h2>
-            <p>Lorem ipsum dolor sit amet. Qui esse ratione sed eligendi accusamus ut saepe voluptas ea nulla tempore ex inventore rerum. Non veniam ipsam et culpa magnam est quia nobis et nesciunt exercitationem eos magnam dolor nam minima iure.</p>
-            <p>Aut placeat blanditiis eos architecto veritatis qui dolore omnis aut amet quae id sunt consequatur et dolorem perferendis ex nemo nihil. Ut placeat explicabo aut quia laboriosam hic praesentium nihil 33 consequatur necessitatibus est neque ratione.</p>
+            <p>Estudante do 6° período da graduação em Jornalismo na Universidade Federal de Pernambuco (UFPE). Desde 2018 traço minha jornada enquanto produtora audiovisual, mas entendi minha afinidade melhor com a área após o ingresso na faculdade de Jornalismo, tenho grande afinidade com a produção de documentários e reportagens que busquem trazer por meio de imagens e sons a mensagem a ser transmitida.</p>
+            <p>Para além da minha afinidade com o audiovisual, meus interesses permeiam pautas sócio-ambientais e também o jornalismo cultural, que considero as temáticas mais exploradas durante o meu período de formação e dentro das atividades extracurriculares que realizo.</p>
         </div>
 
+        <h2 id="titulo-trabalhos-recentes">Trabalhos recentes</h2>
         <div id="ultimostrabalhos">
-            <h2>Trabalhos recentes</h2>
             <!-- Carrossel -->
-            <div id="carouselUltimostrabalhos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div id="carouselUltimostrabalhos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="15000">
                 
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselUltimostrabalhos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -50,14 +50,14 @@
                 </div>
 
                 <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="imagens\nordesteaguaeoleo.jpeg" class="d-block w-100" alt="...">
+                    </div>
                     <div class="carousel-item active">
                         <img src="imagens/fabricadefeijao.jpg" class="d-block w-100" alt="Documentário fábrica de feijão">
                     </div>
                     <div class="carousel-item">
-                        <img src="imagens/fabricadefeijao.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imagens/fabricadefeijao.jpg" class="d-block w-100" alt="...">
+                        <img src="imagens\boidamata.jpeg" class="d-block w-100" alt="...">
                     </div>
                 </div>
 
@@ -71,23 +71,27 @@
                 </button>
             </div>
 
-            <!-- Contêiner para Texto -->
+            <!-- Texto do slide do carrossel -->
             <div id="carousel-text" class="text-container">
-                <h2 id="slide-title">First slide label</h2>
-                <p id="slide-description">Some representative placeholder content for the first slide.</p>
+                <h3 id="slide-title">Nordeste Água e Óleo</h3>
+                <p id="slide-description">Estágio voluntário de Assessoria de Imprensa no documentário Nordeste Água e Óleo, longa-metragem que trata do derramamento de óleo no litoral brasileiro em 2019 e suas reverberações nas praias pernambucanas.</p>
             </div>
 
+            <!-- Código da lógica de mudança do texto -->
             <script>
-                const titles = [
-                    "First slide label",
-                    "Second slide label",
-                    "Third slide label"
-                ];
 
+                // título
+                const titles = [
+                    "Nordeste Água e Óleo",
+                    "Fábrica de feijão",
+                    "Quem procura acha"
+                ];
+                
+                // descrição
                 const descriptions = [
-                    "Some representative placeholder content for the first slide.",
-                    "Some representative placeholder content for the second slide.",
-                    "Some representative placeholder content for the third slide."
+                    "Estágio voluntário de Assessoria de Imprensa no documentário Nordeste Água e Óleo, longa-metragem que trata do derramamento de óleo no litoral brasileiro em 2019 e suas reverberações nas praias pernambucanas.",
+                    "Esse documentário foi idealizado por estudantes de Jornalismo da Universidade Federal de Pernambuco (UFPE), seu propósito é ampliar a voz, rostos e espaço para uma grande parcela da sociedade brasileira que, apesar de todo seu sacrifício e luta, continua sendo um corpo subjugado e tendo sua vivência, suas batalhas diárias e sua voz ignoradas: as mães solo pretas da periferia.",
+                    "As ruas do bairro da Várzea se enchem de energia com a batucada e as canções do bumba-meu-boi. O Boi da Mata, que em 2024 celebra 14 anos de história na UR-7, recebe a visita de uma equipe de estudantes de Jornalismo. Em um dia de cortejo do Boi, eles buscam compreender como essa expressão cultural tem mobilizado a comunidade ao redor do bosque do Bacurau, atraindo crianças, adultos e idosos para brincar, aprender e celebrar a passagem do boi."
                 ];
 
                 const carousel = document.getElementById('carouselUltimostrabalhos');
@@ -104,39 +108,41 @@
         </div>
 
         <div id="menuproducoes">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
+            <div class="row g-3">
+                <div class="col-4">
                     <div class="card">
-                        <a href="#texto">
-                            <img src="imagens\WhatsApp Image 2024-10-21 at 18.48.06.jpeg" class="card-img-top" alt="...">
+                        <a href="#titulo-texto">
+                            <img src="imagens/top-view-preparing-podcast.jpg" class="card-img-top" alt="...">
                             <h5 class="card-title">Textos</h5>
                         </a>
                     </div>
-                  </div>
-                <div class="col">
-                  <div class="card">
-                    <a href="#audiovisual">
-                        <img src="imagens\WhatsApp Image 2024-10-21 at 18.48.06.jpeg" class="card-img-top" alt="...">
-                        <h5 class="card-title">Audiovisual</h5>
-                    </a>
-                  </div>
                 </div>
-                <div class="col">
+                <div class="col-4">
                     <div class="card">
-                        <a href="#sonoros">
-                            <img src="imagens\WhatsApp Image 2024-10-21 at 18.48.06.jpeg" class="card-img-top" alt="...">
+                        <a href="#titulo-audiovisual">
+                            <img src="imagens/Nordeste-agua-e-oleo__FOTO-@lucas_emanuel-055-cropped.jpg" class="card-img-top" alt="...">
+                            <h5 class="card-title">Audiovisual</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <a href="#titulo-sonoros">
+                            <img src="imagens/sonoras.jpeg" class="card-img-top" alt="...">
                             <h5 class="card-title">Sonoras</h5>
                         </a>
                     </div>
-                  </div>
+                </div>
+            </div>
         </div>
+        
 
         <div id="producoes">
+            <h3 id="titulo-texto">Produções textuais</h3>
             <div id="texto">
-                <h2>Produções textuais</h2>
-                <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                     <div class="col">
-                        <a href="">
+                        <a href="https://docs.google.com/document/d/1_8V6trAKI7mi8LnQjgusChQ1pBsxGj5Fcufb27N4Hqg/edit?usp=sharing" target="_blank">
                             <div class="card h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Edifício holiday: os pesadelos e sonhos</h5>
@@ -146,7 +152,7 @@
                         </a>
                     </div>
                     <div class="col">
-                       <a href="">
+                       <a href="https://docs.google.com/document/d/1S_owxp2g6UuEkAKg-hsH2rrF2VzAmfkLgg1J9qoZt4E/edit?usp=drivesdk" target="_blank">
                             <div class="card h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Cada um dá o que tem: o que a comédia atual deve à pornochanchada</h5>
@@ -156,7 +162,7 @@
                         </a>
                     </div>
                     <div class="col">
-                       <a href="">
+                       <a href="https://docs.google.com/document/d/12cwPmcPXtCF0yUK_xM4P9qFPUHlkZU2XJbeGCACUBko/edit?usp=sharing" target="_blank">
                             <div class="card h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">"Eu cuido de Recife", entrevista com Eduardo Moura</h5>
@@ -166,7 +172,7 @@
                         </a>
                     </div>
                     <div class="col">
-                       <a href="">
+                       <a href="https://docs.google.com/document/d/1tKG68THkqsFqfBSmFgwUcMPeTS5WBmHk6Zx3xkyRC2I/edit?usp=sharing" target="_blank">
                             <div class="card h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">"não tem a minha cara", cancelamento em massa de aulas de campo na ufpe</h5>
@@ -176,7 +182,7 @@
                         </a>
                     </div>
                     <div class="col">
-                       <a href="">
+                       <a href="https://docs.google.com/document/d/17kWHo6VV2OM1kshZG6z--4_2i6VgYBe2Rm_5yjfZ2WE/edit?usp=sharing" target="_blank">
                             <div class="card h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">"eu venho do planeta fome"</h5>
@@ -186,7 +192,7 @@
                         </a>
                     </div>
                     <div class="col">
-                       <a href="">
+                       <a href="https://docs.google.com/document/d/16FzpFyRLldubH5rAhdQtqQwp2d48G0bayAVGFIuA6C8/edit?usp=sharing" target="_blank">
                             <div class="card h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">como disse angela davis</h5>
@@ -196,74 +202,96 @@
                         </a>
                     </div>
                     <div class="col">
-                       <a href="">
+                       <a href="https://docs.google.com/document/d/1h2XwYd3qA_7GECL64wzl86YmqNVkRgb4/edit?usp=sharing&ouid=113270993809655834664&rtpof=true&sd=true" target="_blank">
                             <div class="card h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Resenhando "negacionismo religioso: bolsonaro e lideranças evangélicas na pandemia covid-19"</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet. Ut quisquam ipsam sit corporis tempora id aliquam</p>
+                                    <p class="card-text">Resenha crítica do artigo “Negacionismo Religioso: Bolsonaro e Lideranças Evangélicas Na Pandemia Covid-19”, escrito por Clayton Guerreiro e Ronaldo de Almeida, para a cadeira de Antropologia Política</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
-
+            </div>
+            <h3 id="titulo-audiovisual">Audiovisual</h3>
             <div id="audiovisual">
-                <h2>Audiovisual</h2>
-                
-                
-                <a href="#1">
+                <a href="https://youtu.be/yhwLGPjowP4?si=SBHlVUPe2BRA_J2o" target="_blank">
                     <div class="horizontal-card">
                             <img src="imagens\fabricadefeijao.jpg" class="img-fluid rounded" alt="...">
                             <div class="horizontal-card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <h4>Fábrica de feijão</h4>
+                                <p class="card-text">Esse documentário foi idealizado por estudantes de Jornalismo da Universidade Federal de Pernambuco (UFPE), seu propósito é ampliar a voz, rostos e espaço para uma grande parcela da sociedade brasileira que, apesar de todo seu sacrifício e luta, continua sendo um corpo subjugado e tendo sua vivência, suas batalhas diárias e sua voz ignoradas: as mães solo pretas da periferia.</p>
                             </div>
                     </div>
                 </a>
-                <a href="#2">
+                <a href="https://www.youtube.com/watch?v=U8djo6Jpqos&ab_channel=AliceFerreira" target="_blank">
                     <div class="horizontal-card">
-                            <img src="imagens\fabricadefeijao.jpg" class="img-fluid rounded" alt="...">
+                            <img src="imagens\NÃO SOU TUAS NEGAS.jpg" class="img-fluid rounded" alt="...">
                             <div class="horizontal-card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <h4>NÃO SOU TUAS NEGAS</h4>
+                                <p class="card-text">Esse curta-metragem trata da hipersexualização e solidão da mulher preta, amparados por obras acadêmicas e artísticas, os relatos de mulheres negras se encontram na realidade desumanizadora de uma sociedade racista e misógina que encontra no corpo da mulher negra um alvo de violência.</p>
                             </div>
                     </div>
                 </a>
-                <a href="#3">
+                <a href="https://www.youtube.com/watch?v=mlnmLxhpSX4&ab_channel=AliceFerreira" target="_blank">
+                    <div class="horizontal-card">
+                            <img src="imagens\UM GIRASSOL DA COR DO SEU CABELO.jpg" class="img-fluid rounded" alt="...">
+                            <div class="horizontal-card-body">
+                                <h4>Um Girassol da Cor do Seu Cabelo</h4>
+                                <p class="card-text">Ele é um poeta frustrado, sem muitas razões para continuar, constantemente à procura de uma inspiração. Ela é a desavisada musa dos seus sonhos, e Ele busca essa união por meio da música. <a href="https://docs.google.com/document/d/1FHY_Moi8o-SxUHgY_R4yilOrbpd-lRxmxvxmCqtJnM0/edit?usp=sharing"> (Roteiro)</a></p>
+                            </div>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/reel/C-WATOLy6PZ/?utm_source=ig_web_copy_link" target="_blank">
                     <div class="horizontal-card">
                             <img src="imagens\fabricadefeijao.jpg" class="img-fluid rounded" alt="...">
                             <div class="horizontal-card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <h4>Nordeste Água e Óleo</h4>
+                                <p class="card-text">Estágio voluntário de Assessoria de Imprensa no documentário Nordeste Água e Óleo, longa-metragem que trata do derramamento de óleo no litoral brasileiro em 2019 e suas reverberações nas praias pernambucanas.</p>
                             </div>
                     </div>
                 </a>
             </div>
 
+            <h3 id="titulo-sonoros">Sonoras</h3>
             <div id="sonoros">
-                <h2>Sonoros</h2>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <a href=""><img src="imagens\UM GIRASSOL DA COR DO SEU CABELO.jpg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="https://www.youtube.com/live/0FQfkAyQR2k" target="_blank">
+                    <div class="horizontal-card">
+                            <img src="imagens\intervencaoartisticacac.jpeg" class="img-fluid rounded" alt="...">
+                            <div class="horizontal-card-body">
+                                <h4>CODINOME RESISTÊNCIA: O INCENTIVO ÀS INTERVENÇÕES ARTISTICAS DOS ALUNOS DO CAC-UFPE</h4>
+                                <p class="card-text">O centro de artes e comunicação da UFPE é berço de intervenções artisticas produzidas tanto por alunos quanto por artistas independentes que buscam expor o seu trabalho. No Codinome resistência desta terça, falaremos com Sarah Cyrne do projeto Conexões Viscerais e Bernardo Emanuel monitor da Galeria Capibaribe para falarmos sobre o incentivo à intervenções artisticas no CAC.</p>
+                            </div>
                     </div>
-                    </div>
-                    <div class="col">
-                        <a href=""><img src="imagens\UM GIRASSOL DA COR DO SEU CABELO.jpg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a short card.</p>
+                </a>
+                <a href="https://www.youtube.com/live/mVpLFSMRRiE" target="_blank">
+                    <div class="horizontal-card">
+                        <img src="imagens\familiacampos.jpeg" class="img-fluid rounded" alt="...">
+                        <div class="horizontal-card-body">
+                            <h4>CODINOME RESISTÊNCIA: REELEIÇÃO DE CAMPOS? ENTENDA A HISTÓRIA DA FAMÍLIA NA POLÍTICA PERNAMBUCANA.</h4>
+                            <p class="card-text">A família Campos, cuja trajetória política em Pernambuco começou com Miguel Arraes, continua a influenciar o cenário estadual por meio de João Campos, atual prefeito do Recife e bisneto de Arraes. A família investe em comunicação e alianças políticas para fortalecer a posição de João, com foco em sua reeleição em 2024 e em futuras eleições, como a de 2026 para o governo do estado. Com isso, o programa buscará entender as estratégias políticas geracionais utilizadas pelo novo legado da família Campos-Arraes.</p>
                         </div>
                     </div>
-                    <div class="col">
-                        <a href=""><img src="imagens\UM GIRASSOL DA COR DO SEU CABELO.jpg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a short card.</p>
+                </a>
+                <a href="https://open.spotify.com/show/5O2XRqHgOG0bb8gp2gP5IN?si=yJ78iSUeT86pPBIAkqqoIw%0A&nd=1&dlsi=611904b38ff84e6a" target="_blank">
+                    <div class="horizontal-card">
+                        <img src="imagens\fofocac.png" class="img-fluid rounded" alt="...">
+                        <div class="horizontal-card-body">
+                            <h4>Fofocac</h4>
+                            <p class="card-text">Podcast humorístico sobre histórias anônimas do Centro de Artes e Comunicação (CAC) da UFPE</p>
+                        </div>
                     </div>
-                </div>
+                </a>
+                <a href="https://open.spotify.com/show/6jpRndAlciHiAyJcAsnCxg" target="_blank">
+                    <div class="horizontal-card">
+                        <img src="imagens/boidamata.jpeg" class="img-fluid rounded" alt="...">
+                        <div class="horizontal-card-body">
+                            <h4>Quem procura acha</h4>
+                            <p class="card-text">As ruas do bairro da Várzea se enchem de energia com a batucada e as canções do bumba-meu-boi. O Boi da Mata, que em 2024 celebra 14 anos de história na UR-7, recebe a visita de uma equipe de estudantes de Jornalismo. Em um dia de cortejo do Boi, eles buscam compreender como essa expressão cultural tem mobilizado a comunidade ao redor do bosque do Bacurau, atraindo crianças, adultos e idosos para brincar, aprender e celebrar a passagem do boi.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
             </div>
         </div>
 
@@ -271,9 +299,14 @@
             <div>
                 <h2>Contato</h2>
                 <ul>
-                    <li><a href="#"><img src="imagens\icons\mail.png" alt=""></a></li>
-                    <li><a href="#"><img src="imagens\icons\linkedin.png" alt=""></a></li>
-                    <li><a href="#"><img src="imagens\icons\instagram.png" alt="" ></a></li>
+                    <li>
+                        <a href="mailto:alice.fsilva@ufpe.com" target="_blank">
+                            <img src="imagens/icons/mail.png" alt="">
+                        </a>
+                        <a href="mailto:alice.fsilva@ufpe.com" target="_blank">alice.fsilva@ufpe.com</a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/alice-ferreira-da-silva-b9a813335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="imagens\icons\linkedin.png" alt=""></a><a href="https://www.linkedin.com/in/alice-ferreira-da-silva-b9a813335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_blank"> Alice Ferreira</a></li>
+                    <li><a href="https://www.instagram.com/moonlight.a/"><img src="imagens\icons\instagram.png" alt=""  target="_blank"></a><a href="https://www.instagram.com/moonlight.a/"  target="_blank"> @Moonlight.a</a></li>
                 </ul>
             </div>
         </div>
@@ -281,8 +314,24 @@
 
     <!-- Rodapé -->
     <footer>
-
-    </footer>
+        <ul>
+            <li><a href="#sobremim">Sobre mim</a></li>
+            <li><a href="#ultimostrabalhos">Trabalhos recentes</a></li>
+            <li><a href="#menuproducoes">Produções</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/alice-ferreira-da-silva-b9a813335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_blank"><img src="imagens\icons\linkedin-svgrepo-com.svg" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/moonlight.a/" target="_blank"><img src="imagens\icons\instagram-svgrepo-com.svg" alt="Instagram"></a>
+            <a href="#"  target="_blank"><img src="imagens\icons\email-svgrepo-com.svg" alt="Email"></a>
+        </div>
+    
+        <div class="footer-info">
+            <span>© 2024. Todos os direitos reservados.</span>
+            <span>Feito por <a href="https://github.com/jamilly-b"  target="_blank">Jamilly Braga</a></span>
+        </div>
+    </footer>    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
